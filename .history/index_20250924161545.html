@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Anas ❤️ Rimsha</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description"
+		content="We are getting hitched on November 9th and we would like you to be a part of it." />
+	<meta name="keywords" content="Anas,Rimsha,wedding,website,rsvp" />
+	<meta name="author" content="Anas & Rimsha" />
+
+	<!-- Facebook and Twitter integration -->
+	<meta property="og:image" content="images/wpic3.jpg" />
+	<meta property="og:site_name" content="Anas ❤️ Rimsha">
+	<meta property="og:title" content="Anas ❤️ Rimsha">
+	<meta property="og:description"
+		content="We are getting hitched on November 9th and we would like you to be a part of it.">
+	<meta property="og:image:width" content="300">
+	<meta property="og:image:height" content="300">
+	<meta property="og:type" content="website" />
+	<meta property="og:image:type" content="image/jpeg">
+
+	<link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet'
+		type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Engagement" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia+Sans+Condensed" rel="stylesheet">
+
+	<!-- External libraries -->
+	<link rel="stylesheet" href="css/responsive-clock.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/icomoon.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/flipclock/0.7.8/flipclock.css'>
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<style>
+		:root {
+			--primary-gold: #D4AF37;
+			--primary-rose: #E8B4B8;
+			--accent-cream: #FAF7F2;
+			--text-dark: #2C3E50;
+			--text-light: #7F8C8D;
+			--gradient-primary: linear-gradient(135deg, #D4AF37 0%, #E8B4B8 100%);
+			--gradient-secondary: linear-gradient(135deg, #FAF7F2 0%, #F8F5F0 100%);
+			--shadow-soft: 0 10px 40px rgba(0, 0, 0, 0.1);
+			--shadow-hover: 0 20px 60px rgba(0, 0, 0, 0.15);
+		}
+
+		* {
+			scroll-behavior: smooth;
+		}
+
+		body {
+			font-family: 'Inter', sans-serif;
+			overflow-x: hidden;
+		}
+
+		/* Floating Hearts Animation */
+		.floating-hearts {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			pointer-events: none;
+			z-index: 1;
+		}
+
+		.heart {
+			position: absolute;
+			color: var(--primary-rose);
+			font-size: 20px;
+			opacity: 0.3;
+			animation: float 8s infinite linear;
+		}
+
+		@keyframes float {
+			0% {
+				transform: translateY(100vh) rotate(0deg);
+				opacity: 0;
+			}
+			10% {
+				opacity: 0.3;
+			}
+			90% {
+				opacity: 0.3;
+			}
+			100% {
+				transform: translateY(-10vh) rotate(360deg);
+				opacity: 0;
+			}
+		}
+
+		/* Enhanced Navigation */
+		.fh5co-nav {
+			backdrop-filter: blur(10px);
+			background: rgba(255, 255, 255, 0.95);
+			transition: all 0.3s ease;
+			box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+		}
+
+		.fh5co-nav ul li a {
+			position: relative;
+			transition: all 0.3s ease;
+		}
+
+		.fh5co-nav ul li a:before {
+			content: '';
+			position: absolute;
+			width: 0;
+			height: 2px;
+			bottom: -5px;
+			left: 50%;
+			background: var(--gradient-primary);
+			transition: all 0.3s ease;
+			transform: translateX(-50%);
+		}
+
+		.fh5co-nav ul li a:hover:before,
+		.fh5co-nav ul li.active a:before {
+			width: 100%;
+		}
+
+		/* Modern Header */
+		#fh5co-header {
+			position: relative;
+			background-attachment: fixed;
+		}
+
+		#fh5co-header::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background: linear-gradient(45deg, rgba(212, 175, 55, 0.1) 0%, rgba(232, 180, 184, 0.1) 100%);
+			z-index: 1;
+		}
+
+		#fh5co-header .container {
+			position: relative;
+			z-index: 2;
+		}
+
+		.header-content {
+			backdrop-filter: blur(10px);
+			background: rgba(255, 255, 255, 0.1);
+			border-radius: 20px;
+			padding: 60px 40px;
+			border: 1px solid rgba(255, 255, 255, 0.2);
+			box-shadow: var(--shadow-soft);
+			transition: all 0.3s ease;
+		}
+
+		.header-content:hover {
+			transform: translateY(-5px);
+			box-shadow: var(--shadow-hover);
+		}
+
+		.couple-names {
+			font-family: 'Playfair Display', serif;
+			font-size: 4.5rem;
+			font-weight: 700;
+			background: var(--gradient-primary);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			background-clip: text;
+			margin-bottom: 30px;
+			text-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		}
+
+		.wedding-date {
+			font-family: 'Inter', sans-serif;
+			font-size: 2.2rem;
+			font-weight: 300;
+			color: var(--text-dark);
+			margin: 20px 0;
+			letter-spacing: 3px;
+		}
+
+		.love-quote {
+			font-family: 'Playfair Display', serif;
+			font-style: italic;
+			font-size: 1.4rem;
+			color: var(--text-light);
+			margin: 30px 0;
+			position: relative;
+			padding: 0 30px;
+		}
+
+		.love-quote::before,
+		.love-quote::after {
+			content: '"';
+			font-size: 3rem;
+			color: var(--primary-gold);
+			position: absolute;
+			top: -10px;
+		}
+
+		.love-quote::before {
+			left: 0;
+		}
+
+		.love-quote::after {
+			right: 0;
+		}
+
+		/* Modern Flip Clock */
+		.flipTimebox {
+			margin: 40px 0;
+			padding: 30px;
+			background: rgba(255, 255, 255, 0.2);
+			border-radius: 15px;
+			backdrop-filter: blur(10px);
+		}
+
+		.clock {
+			margin: 0 auto !important;
+		}
+
+		.flip-clock-wrapper ul {
+			background: var(--gradient-primary) !important;
+			border-radius: 8px !important;
+			box-shadow: var(--shadow-soft) !important;
+		}
+
+		.flip-clock-wrapper ul li a div div.inn {
+			color: white !important;
+			font-weight: 600 !important;
+		}
+
+		/* Enhanced Save Date Button */
+		.save-date-btn {
+			background: var(--gradient-primary);
+			border: none;
+			padding: 15px 40px;
+			border-radius: 50px;
+			color: white;
+			font-weight: 600;
+			text-decoration: none;
+			display: inline-block;
+			transition: all 0.3s ease;
+			box-shadow: var(--shadow-soft);
+			text-transform: uppercase;
+			letter-spacing: 1px;
+		}
+
+		.save-date-btn:hover {
+			transform: translateY(-3px);
+			box-shadow: var(--shadow-hover);
+			color: white;
+		}
+
+		/* Modern Event Cards */
+		.event-wrap {
+			background: rgba(255, 255, 255, 0.95);
+			backdrop-filter: blur(10px);
+			border-radius: 20px;
+			padding: 50px;
+			box-shadow: var(--shadow-soft);
+			transition: all 0.3s ease;
+			border: 1px solid rgba(255, 255, 255, 0.3);
+		}
+
+		.event-wrap:hover {
+			transform: translateY(-10px);
+			box-shadow: var(--shadow-hover);
+		}
+
+		.event-wrap h3 {
+			font-family: 'Playfair Display', serif;
+			font-size: 2.5rem;
+			color: var(--text-dark);
+			margin-bottom: 30px;
+			text-align: center;
+		}
+
+		.event-details {
+			display: flex;
+			justify-content: space-around;
+			margin: 30px 0;
+			flex-wrap: wrap;
+		}
+
+		.event-col {
+			display: flex;
+			align-items: center;
+			gap: 10px;
+			background: var(--gradient-secondary);
+			padding: 15px 25px;
+			border-radius: 50px;
+			margin: 10px;
+			box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+		}
+
+		.event-col i {
+			color: var(--primary-gold);
+			font-size: 1.2rem;
+		}
+
+		/* Enhanced Map */
+		.map-container {
+			border-radius: 20px;
+			overflow: hidden;
+			box-shadow: var(--shadow-soft);
+			transition: all 0.3s ease;
+		}
+
+		.map-container:hover {
+			transform: scale(1.02);
+			box-shadow: var(--shadow-hover);
+		}
+
+		/* Modern Gallery */
+		#fh5co-gallery-list li {
+			border-radius: 15px;
+			overflow: hidden;
+			transition: all 0.3s ease;
+			box-shadow: var(--shadow-soft);
+		}
+
+		#fh5co-gallery-list li:hover {
+			transform: translateY(-10px) scale(1.05);
+			box-shadow: var(--shadow-hover);
+		}
+
+		#fh5co-gallery-list li::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background: linear-gradient(45deg, rgba(212, 175, 55, 0.3) 0%, rgba(232, 180, 184, 0.3) 100%);
+			opacity: 0;
+			transition: opacity 0.3s ease;
+		}
+
+		#fh5co-gallery-list li:hover::before {
+			opacity: 1;
+		}
+
+		/* Enhanced Highlights Carousel */
+		.highlight-container {
+			border-radius: 20px;
+			overflow: hidden;
+			box-shadow: var(--shadow-soft);
+			background: var(--gradient-secondary);
+			padding: 30px;
+		}
+
+		.marquee-wrapper {
+			display: flex;
+			gap: 30px;
+			animation: marquee 50s linear infinite;
+		}
+
+		.sliding-image {
+			border-radius: 15px;
+			box-shadow: var(--shadow-soft);
+			transition: all 0.3s ease;
+			filter: brightness(0.9);
+		}
+
+		.sliding-image:hover {
+			transform: scale(1.1);
+			filter: brightness(1);
+			box-shadow: var(--shadow-hover);
+		}
+
+		/* Modern Footer */
+		#fh5co-footer {
+			background: linear-gradient(135deg, #2C3E50 0%, #34495E 100%);
+			position: relative;
+		}
+
+		#fh5co-footer::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" fill="white" opacity="0.1"><path d="M0,50 Q250,0 500,50 T1000,50 L1000,100 L0,100 Z"/></svg>') no-repeat center top;
+			background-size: 100% 100px;
+		}
+
+		.footer-content {
+			position: relative;
+			z-index: 2;
+		}
+
+		.footer-hearts {
+			font-size: 3rem;
+			animation: heartbeat 2s ease-in-out infinite;
+		}
+
+		@keyframes heartbeat {
+			0%, 100% { transform: scale(1); }
+			50% { transform: scale(1.1); }
+		}
+
+		/* Responsive Design */
+		@media (max-width: 768px) {
+			.couple-names {
+				font-size: 3rem;
+			}
+			
+			.header-content {
+				padding: 40px 20px;
+			}
+			
+			.event-details {
+				flex-direction: column;
+				align-items: center;
+			}
+			
+			.love-quote {
+				font-size: 1.1rem;
+				padding: 0 20px;
+			}
+		}
+
+		/* Section Headings */
+		.section-heading {
+			font-family: 'Playfair Display', serif;
+			font-size: 3rem;
+			font-weight: 600;
+			background: var(--gradient-primary);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			background-clip: text;
+			text-align: center;
+			margin-bottom: 50px;
+			position: relative;
+		}
+
+		.section-heading::after {
+			content: '';
+			position: absolute;
+			bottom: -15px;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 100px;
+			height: 3px;
+			background: var(--gradient-primary);
+			border-radius: 2px;
+		}
+
+		/* Parallax Stars */
+		.stars {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			pointer-events: none;
+			z-index: 0;
+		}
+
+		.star {
+			position: absolute;
+			background: var(--primary-gold);
+			border-radius: 50%;
+			animation: twinkle 3s infinite;
+		}
+
+		@keyframes twinkle {
+			0%, 100% { opacity: 0.3; transform: scale(1); }
+			50% { opacity: 1; transform: scale(1.2); }
+		}
+
+		/* Scroll animations */
+		.fade-in-up {
+			opacity: 0;
+			transform: translateY(30px);
+			transition: all 0.6s ease;
+		}
+
+		.fade-in-up.visible {
+			opacity: 1;
+			transform: translateY(0);
+		}
+	</style>
+
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+
+<body>
+	<!-- Floating Hearts -->
+	<div class="floating-hearts"></div>
+	
+	<!-- Twinkling Stars -->
+	<div class="stars"></div>
+
+	<div class="fh5co-loader"></div>
+
+	<div id="page">
+		<nav class="fh5co-nav" role="navigation">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-10 text-right menu-1">
+						<ul>
+							<li class="active"><a href="index.html">Home</a></li>
+							<li><a href="#fh5co-event">Events</a></li>
+							<li><a href="#fh5co-gallery">Gallery</a></li>
+							<li><a href="#fh5co-services">Highlights</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<header id="fh5co-header" class="fh5co-cover" role="banner" style="background-image:url(images/bg.jpg);"
+			data-stellar-background-ratio="0.5">
+			<div class="overlay"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center">
+						<div class="display-t">
+							<div class="display-tc">
+								<div class="header-content animate-box" data-animate-effect="fadeIn">
+									<h1 class="couple-names">Anas & Rimsha</h1>
+									<img src="images/fprint.png" alt="Anas + Rimsha" style="max-width: 100px; margin: 20px 0;">
+									<h2 class="wedding-date">09.11.2025</h2>
+									<p class="love-quote">I have found the one whom my soul loves</p>
+
+									<div class="flipTimebox">
+										<div class="clock clock-fix mx-auto"></div>
+									</div>
+
+									<p>
+										<a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Wedding%20of%20Anas%20and%20Rimsha&dates=20250427T113000/20250427T140000&details=Wedding%20ceremony%20at%20ForaCastle%20Auditorium,%20Chemrakkattur%20Areekode%20City&location=Chemrakkattur,%20Areekode"
+											class="save-date-btn" target="_blank">Save our date</a>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<div id="fh5co-event" class="fh5co-bg">
+			<div class="overlay"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center">
+						<h2 class="section-heading fade-in-up">Events</h2>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2">
+						<div class="event-wrap fade-in-up">
+							<h3>Wedding Ceremony</h3>
+							<div class="event-details">
+								<div class="event-col">
+									<i class="icon-calendar"></i>
+									<span>09 November 2025</span>
+								</div>
+								<div class="event-col">
+									<i class="icon-clock"></i>
+									<span>5:00 PM</span>
+								</div>
+							</div>
+
+							<p style="text-align: center; font-size: 1.1rem; margin: 30px 0;">
+								At <b>Fora Castle Auditorium, Chemrakkattur, Areekode</b>
+							</p>
+							
+							<div class="map-container">
+								<iframe
+									src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31309.02518933153!2d76.00356417431641!3d11.215124300000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba64769b13ded59%3A0xb071367ea8171362!2sFora%20Castle!5e0!3m2!1sen!2sae!4v1758714854425!5m2!1sen!2sae"
+									style="width: 100%; height: 300px; border: 0; border-radius: 15px;"
+									allowfullscreen="" loading="lazy"
+									referrerpolicy="no-referrer-when-downgrade"></iframe>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="fh5co-gallery" class="fh5co-section-gray">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center">
+						<h2 class="section-heading fade-in-up">Gallery</h2>
+					</div>
+				</div>
+				<div class="row row-bottom-padded-md">
+					<div class="col-md-12">
+						<ul id="fh5co-gallery-list">
+							<li class="one-third animate-box fade-in-up" data-animate-effect="fadeIn"
+								style="background-image: url(images/wpic1.jpg);">
+								<a href="images/wpic1.jpg">
+									<div class="case-studies-summary"></div>
+								</a>
+							</li>
+							<li class="one-third animate-box fade-in-up" data-animate-effect="fadeIn"
+								style="background-image: url(images/wpic2.jpg);">
+								<a href="images/wpic2.jpg">
+									<div class="case-studies-summary"></div>
+								</a>
+							</li>
+							<li class="one-third animate-box fade-in-up" data-animate-effect="fadeIn"
+								style="background-image: url(images/wpic3.jpg);">
+								<a href="images/wpic3.jpg">
+									<div class="case-studies-summary"></div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="fh5co-services" class="fh5co-section-gray">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center">
+						<h2 class="section-heading fade-in-up">Highlights</h2>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-12">
+						<div class="highlight-container fade-in-up">
+							<div class="marquee-wrapper">
+								<img src="images/wpic4.jpg" alt="Highlights" class="sliding-image">
+								<img src="images/wpic5.jpg" alt="Highlights" class="sliding-image">
+								<img src="images/wpic6.jpg" alt="Highlights" class="sliding-image">
+								<img src="images/wpic4.jpg" alt="Highlights" class="sliding-image">
+								<img src="images/wpic5.jpg" alt="Highlights" class="sliding-image">
+								<img src="images/wpic6.jpg" alt="Highlights" class="sliding-image">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+	</div>
+
+	<footer id="fh5co-footer" class="fh5co-bg">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="footer-content text-center">
+						<a href="https://www.instagram.com/our.privates._?igsh=MTN5bmtwNWt1Nzc5bQ==" target="_blank"
+							style="display: inline-block; text-decoration: none; color: white;">
+							<h2 style="color: white; margin-top: 40px;">
+								Anas <span class="footer-hearts">❤️</span> Rimsha
+							</h2>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Scripts -->
+	<script src="js/jquery.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			// Countdown Clock
+			var weddingDate = new Date("2025/11/09 17:00:00").getTime();
+			var clock = $('.clock').FlipClock({
+				clockFace: 'DailyCounter',
+				countdown: true,
+				callbacks: {
+					stop: function () {
+						$('.message').html('The wedding has begun!')
+					}
+				}
+			});
+
+			var now = new Date().getTime();
+			var diff = (weddingDate - now) / 1000;
+			clock.setTime(diff);
+			clock.start();
+
+			// Floating Hearts
+			function createHeart() {
+				const heart = $('<div class="heart">❤</div>');
+				const heartSize = Math.random() * 15 + 10;
+				const startPosition = Math.random() * window.innerWidth;
+				const animationDuration = Math.random() * 3000 + 5000;
+				
+				heart.css({
+					left: startPosition + 'px',
+					fontSize: heartSize + 'px',
+					animationDuration: animationDuration + 'ms'
+				});
+				
+				$('.floating-hearts').append(heart);
+				
+				setTimeout(() => {
+					heart.remove();
+				}, animationDuration);
+			}
+
+			setInterval(createHeart, 2000);
+
+			// Twinkling Stars
+			function createStars() {
+				for (let i = 0; i < 50; i++) {
+					const star = $('<div class="star"></div>');
+					const size = Math.random() * 3 + 1;
+					const top = Math.random() * window.innerHeight;
+					const left = Math.random() * window.innerWidth;
+					const delay = Math.random() * 3;
+
+					star.css({
+						width: size + 'px',
+						height: size + 'px',
+						top: top + 'px',
+						left: left + 'px',
+						animationDelay: delay + 's'
+					});
+
+					$('.stars').append(star);
+				}
+			}
+
+			createStars();
+
+			// Scroll animations
+			function checkScroll() {
+				$('.fade-in-up').each(function() {
+					var elementTop = $(this).offset().top;
+					var elementBottom = elementTop + $(this).outerHeight();
+					var viewportTop = $(window).scrollTop();
+					var viewportBottom = viewportTop + $(window).height();
+
+					if (elementBottom > viewportTop && elementTop < viewportBottom) {
+						$(this).addClass('visible');
+					}
+				});
+			}
+
+			$(window).on('scroll', checkScroll);
+			$(window).on('resize', checkScroll);
+			checkScroll();
+
+			// Smooth scrolling
+			$('a[href^="#"]').on('click', function(event) {
+				var target = $(this.getAttribute('href'));
+				if (target.length) {
+					event.preventDefault();
+					$('html, body').stop().animate({
+						scrollTop: target.offset().top - 80
+					}, 1000);
+				}
+			});
+		});
+	</script>
+
+	<!-- External Scripts -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.countTo.js"></script>
+	<script src='https://momentjs.com/downloads/moment.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.14/moment-timezone-with-data-2012-2022.min.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/flipclock/0.7.8/flipclock.js'></script>
+	<script src="js/jquery.stellar.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/magnific-popup-options.js"></script>
+	<script src="js/main.js"></script>
+
+</body>
+
+</html>
